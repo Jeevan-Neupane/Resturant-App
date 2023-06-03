@@ -1,0 +1,86 @@
+.home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headContainer {
+  width: auto;
+  margin-left: 30px;
+}
+
+.home .headContainer h1 {
+  font-family: bold;
+  font-size: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.home .headContainer p {
+  margin-top: 15px;
+  font-size: 40px;
+
+  color: black;
+}
+.headContainer button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  transition: 0.4s;
+  font-size: 20px;
+}
+.headContainer button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headContainer {
+    margin-left: 0;
+    background-color: black;
+    width: 80%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home .headContainer h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .home .headContainer p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  .home .headContainer button {
+    background-color: white;
+    color: black;
+    opacity: 1;
+  }
+}
+@media (max-width: 300px) {
+  .home .headContainer h1 {
+    font-size: 30px;
+  }
+  .home .headContainer p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .home .headContainer button {
+    font-size: 15px;
+  }
+}
